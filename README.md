@@ -9,5 +9,5 @@ It also helps you show your work.
 
 
 # Authors
-[Hansel Wei](https://github.com/darkmastermindz)
-[Zach Gainer](https://github.com/chaosinalunchbox)
+- [Hansel Wei](https://github.com/darkmastermindz)
+- [Zach Gainer](https://github.com/chaosinalunchbox)
