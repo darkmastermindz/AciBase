@@ -6,3 +6,8 @@ It also helps you show your work.
 
 # Screenshots
 ![Demo](https://media.giphy.com/media/fxO5yvadOtqJhJqb5v/giphy.gif)
+
+
+# Authors
+[Hansel Wei](https://github.com/darkmastermindz)
+[Zach Gainer](https://github.com/chaosinalunchbox)
