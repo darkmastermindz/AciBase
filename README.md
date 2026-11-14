@@ -4,6 +4,19 @@ TI-83/84 Plus BASIC Science Program (Chemistry)
 This simple, easy program helps calculate pH, pOH, [OH-], and [H+] for acid and base problems. 
 It also helps you show your work.
 
+# Calculations
+**Main menu**
+- **pH / pOH / OH- / H3O+**: enter any one and get the other three.
+
+**More... menu** (new in v3.18). Each one shows a work screen with the formula it used, then the standard pH/pOH/[OH-]/[H+] summary.
+- **Weak Acid**: Ka and initial [HA] → [H+] from `Ka = x²/(C−x)` (solved exactly with the quadratic formula), pH, and % ionization.
+- **Weak Base**: Kb and initial [B] → [OH-] from `Kb = x²/(C−x)`, pOH/pH, and % ionization.
+- **Ka/Kb Conv**: Ka or Kb → the conjugate constant (`Ka·Kb = Kw`), pK, and the conjugate pK.
+- **Buffer (H-H)**: Ka, [A-], [HA] → pH from Henderson–Hasselbalch, `pH = pKa + log([A-]/[HA])`.
+- **Titration**: strong acid + strong base (M and mL of each) → mmol H+ and OH-, total volume, equivalence volume, and the pH of the mixture. Water autoionization is included, so you get pH 7 exactly at equivalence.
+
+All calculations assume 25 °C (Kw = 1.0×10⁻¹⁴) and monoprotic acids and bases.
+
 # Screenshots
 ![Demo](https://media.giphy.com/media/fxO5yvadOtqJhJqb5v/giphy.gif)
 
