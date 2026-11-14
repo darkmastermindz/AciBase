@@ -250,7 +250,7 @@ ClrHome
 Return
 Lbl IN
 ClrHome
-Disp "AciBASE v3.18","","C[r][|e][|a][t][|e][|d] [|b]y","Z[|a][|c]h G[|a]i[n][|e][r] and ","Hansel Wei","","M[|a]y 20[t]h 2014"
+Disp "AciBASE v3.18","","C[r][|e][|a][t][|e][|d] [|b]y","Z[|a][|c]h G[|a]i[n][|e][r] and ","Hansel Wei","","M[|a]y 20[t]h 2014","U[p][|d][|a][t][|e][|d] Nov 2026"
 Pause
 ClrHome
 Goto 1
