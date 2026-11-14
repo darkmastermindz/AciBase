@@ -1,0 +1,55 @@
+name: Release from Dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to release (example: v4.0.0)"
+        required: true
+        type: string
+      release_name:
+        description: "Release name (defaults to tag)"
+        required: false
+        type: string
+      prerelease:
+        description: "Mark as prerelease"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    uses: ./.github/workflows/package-acibase.yml
+
+  release:
+    needs: package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download packaged zip
+        uses: actions/download-artifact@v4
+        with:
+          name: acibase-zip
+
+      - name: Create or update release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          RELEASE_NAME: ${{ inputs.release_name }}
+          PRERELEASE: ${{ inputs.prerelease }}
+        run: |
+          set -euo pipefail
+
+          title="${RELEASE_NAME:-$TAG}"
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" acibase.zip --clobber
+          else
+            prerelease_flag=""
+            if [ "$PRERELEASE" = "true" ]; then
+              prerelease_flag="--prerelease"
+            fi
+            gh release create "$TAG" acibase.zip --title "$title" $prerelease_flag
+          fi

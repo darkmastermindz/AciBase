@@ -1,0 +1,43 @@
+name: Package AciBase Zip
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Build acibase.zip
+        run: |
+          set -euo pipefail
+
+          rm -rf package acibase.zip
+          mkdir -p package/AciBase/Screenshots
+
+          cp AciBase.8xp package/AciBase/ACIBASE.8xp
+          cp doc/01MENU.BMP package/AciBase/Screenshots/01MENU.BMP
+          cp doc/02PROBLEMINPUT.BMP package/AciBase/Screenshots/02PROBLEMINPUT.BMP
+          cp doc/03OUTPUT.BMP package/AciBase/Screenshots/03OUTPUT.BMP
+          cp doc/INFO.BMP package/AciBase/Screenshots/INFO.BMP
+
+          (
+            cd package
+            zip -r ../acibase.zip AciBase
+          )
+
+      - name: Upload acibase.zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: acibase-zip
+          path: acibase.zip
+          if-no-files-found: error
