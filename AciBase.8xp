@@ -43,7 +43,7 @@ End
 14-B->A:"[p]H
 Lbl 2
 ClrDraw
-Text(1,26,"AciBASE v3.18"
+Text(1,28,"AciBASE v4.0"
 Horizontal 10
 Horizontal ~10
 Horizontal 7
@@ -79,7 +79,7 @@ End
 (1.00|E~14)/(D)->C:"OH-
 100D/M->P:"%IONIZED
 ClrDraw
-Text(1,26,"AciBASE v3.18"
+Text(1,28,"AciBASE v4.0"
 Horizontal 10
 Horizontal ~10
 Horizontal 7
@@ -111,7 +111,7 @@ End
 (1.00|E~14)/(C)->D:"H3O
 100C/M->P:"%IONIZED
 ClrDraw
-Text(1,26,"AciBASE v3.18"
+Text(1,28,"AciBASE v4.0"
 Horizontal 10
 Horizontal ~10
 Horizontal 7
@@ -138,7 +138,7 @@ End
 ~log(K)->F:"[p]K
 14-F->G:"CONJUGATE [p]K
 ClrDraw
-Text(1,26,"AciBASE v3.18"
+Text(1,28,"AciBASE v4.0"
 Horizontal 10
 Horizontal ~10
 Horizontal 7
@@ -174,7 +174,7 @@ F+log(R)->A:"[p]H
 10^(~B)->C:"OH-
 10^(~A)->D:"H3O
 ClrDraw
-Text(1,26,"AciBASE v3.18"
+Text(1,28,"AciBASE v4.0"
 Horizontal 10
 Horizontal ~10
 Horizontal 7
@@ -225,7 +225,7 @@ Else
 	(1.00|E~14)/(C)->D:"H3O
 End
 ClrDraw
-Text(1,26,"AciBASE v3.18"
+Text(1,28,"AciBASE v4.0"
 Horizontal 10
 Horizontal ~10
 Horizontal 7
@@ -250,7 +250,7 @@ ClrHome
 Return
 Lbl IN
 ClrHome
-Disp "AciBASE v3.18","","C[r][|e][|a][t][|e][|d] [|b]y","Z[|a][|c]h G[|a]i[n][|e][r] and ","Hansel Wei","","M[|a]y 20[t]h 2014","U[p][|d][|a][t][|e][|d] Nov 2026"
+Disp "AciBASE v4.0","","C[r][|e][|a][t][|e][|d] [|b]y","Z[|a][|c]h G[|a]i[n][|e][r] and ","Hansel Wei","","M[|a]y 20[t]h 2014","U[p][|d][|a][t][|e][|d] Nov 2026"
 Pause
 ClrHome
 Goto 1

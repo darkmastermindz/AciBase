@@ -8,7 +8,7 @@ It also helps you show your work.
 **Main menu**
 - **pH / pOH / OH- / H3O+**: enter any one and get the other three.
 
-**More... menu** (new in v3.18). Each one shows a work screen with the formula it used, then the standard pH/pOH/[OH-]/[H+] summary.
+**More... menu** (new in v4.0). Each one shows a work screen with the formula it used, then the standard pH/pOH/[OH-]/[H+] summary.
 - **Weak Acid**: Ka and initial [HA] → [H+] from `Ka = x²/(C−x)` (solved exactly with the quadratic formula), pH, and % ionization.
 - **Weak Base**: Kb and initial [B] → [OH-] from `Kb = x²/(C−x)`, pOH/pH, and % ionization.
 - **Ka/Kb Conv**: Ka or Kb → the conjugate constant (`Ka·Kb = Kw`), pK, and the conjugate pK.
@@ -21,7 +21,11 @@ All calculations assume 25 °C (Kw = 1.0×10⁻¹⁴) and monoprotic acids and b
 ![Demo](https://media.giphy.com/media/fxO5yvadOtqJhJqb5v/giphy.gif)
 
 # Releases
-**Version 3.17 (Latest)**
+**Version 4.0 (Unreleased, in development)**
+- Adds the More... menu: weak acid, weak base, Ka/Kb conversion, buffer, and titration
+- Fixes the OH- input loop
+
+**Version 3.17**
 - [https://www.ticalc.org/archives/files/fileinfo/459/45997.html](https://www.ticalc.org/archives/files/fileinfo/459/45997.html)
 - Release Date: `Sat Jun 7 23:09:44 2014`
 - File Size: `5,483 bytes`
